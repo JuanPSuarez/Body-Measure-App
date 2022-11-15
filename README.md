@@ -3,7 +3,7 @@ A simple HTML, CSS, JS App, for taking notes on your body measures.
 
 This project will try to use vanilla CSS and JS. 
 
-The final project will have a unique URL for name and measures.
+The final project will have a unique URL for name, measures and a mobile version.
 
 Version: 0.1
 
