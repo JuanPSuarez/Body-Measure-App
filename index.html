@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Measures App</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="./script.js"></script>
+
+</head>
+
+<body>
+    <div class="wrapper">
+        <h1>Measures App</h1>
+        <p>Take your measurements and enter them into the dials. Click the "Generate" button to create a unique URL.</p>
+        <div class="silhouette-light">
+            <img src="/resources/Silhouette Light.png.png" alt="">
+        </div>
+        <div class="input-meassure">
+            <p></p>
+            <p>🦆Hombros <input type="range" value="0" min="0" max="200" oninput="this.nextElementSibling.value = this.value">
+                <output>0</output></p>
+
+            <p>🦆Cintura <input type="range" value="0" min="0" max="200" oninput="this.nextElementSibling.value = this.value">
+                <output>0</output></p>
+            </p>
+            <p>🦆Cadera <input type="range" value="0" min="0" max="200" oninput="this.nextElementSibling.value = this.value">
+                <output>0</output></p>
+            </p>
+            <p>🦆Altura <input type="range" value="0" min="0" max="300" oninput="this.nextElementSibling.value = this.value">
+                <output>0</output></p>
+            <button>Generate</button>
+            </p>
+        </div>
+    </div>
+</body>
+
+</html>
