@@ -9,6 +9,7 @@
     <link rel="stylesheet" href="style.css">
     <script src="./script.js"></script>
 
+
 </head>
 
 <body>
@@ -19,22 +20,15 @@
             <img src="/resources/Silhouette Light.png.png" alt="">
         </div>
         <div class="input-meassure">
-            <p></p>
-            <p>🦆Hombros <input type="range" value="0" min="0" max="200" oninput="this.nextElementSibling.value = this.value">
-                <output>0</output></p>
-
-            <p>🦆Cintura <input type="range" value="0" min="0" max="200" oninput="this.nextElementSibling.value = this.value">
-                <output>0</output></p>
-            </p>
-            <p>🦆Cadera <input type="range" value="0" min="0" max="200" oninput="this.nextElementSibling.value = this.value">
-                <output>0</output></p>
-            </p>
-            <p>🦆Altura <input type="range" value="0" min="0" max="300" oninput="this.nextElementSibling.value = this.value">
-                <output>0</output></p>
-            <button>Generate</button>
+            <p>💪Hombros <input type="range" id="HombrosInput" value="0" min="0" max="200" oninput="this.nextElementSibling.value = this.value"> <output>0</output></p>
+            <p>📏Cintura <input type="range" id="CinturaInput" value="0" min="0" max="200" oninput="this.nextElementSibling.value = this.value"> <output>0</output></p>
+            <p>🤏Cadera <input type="range" id="CaderaInput" value="0" min="0" max="200" oninput="this.nextElementSibling.value = this.value"><output>0</output></p>
+            <p>🧍‍♀️Altura <input type="range" id="AlturaInput" value="0" min="0" max="300" oninput="this.nextElementSibling.value = this.value"><output>0</output></p>
+            <button id="gButton">Generate</button>
             </p>
         </div>
     </div>
+
 </body>
 
 </html>
