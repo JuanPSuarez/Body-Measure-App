@@ -14,7 +14,12 @@ document.addEventListener("DOMContentLoaded", function() {
     const CinturaIn = document.getElementById("CinturaInput");
     const CaderaIn = document.getElementById("CaderaInput");
     const AlturaIn = document.getElementById("AlturaInput");
+    const switchButton = document.getElementById("Switch");
 
+    //! TODO: Functional darkmode
+
+    switchButton.onclick = document.getElementsByTagName("body")[0];
+    element.classlist.toggle("dark-mode");
     gButton.onclick = function changeContent() {
         const medidasPersona = new Medidas(
             HombrosIn.value,
@@ -22,6 +27,9 @@ document.addEventListener("DOMContentLoaded", function() {
             CaderaIn.value,
             AlturaIn.value
         )
+
+        //! TODO: Generar el texto debajo de los sliders
+
         console.log(medidasPersona)
 
 

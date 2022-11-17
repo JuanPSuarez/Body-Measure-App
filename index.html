@@ -16,14 +16,19 @@
     <div class="wrapper">
         <h1>Measures App</h1>
         <p>Take your measurements and enter them into the dials. Click the "Generate" button to create a unique URL.</p>
+        <!-- Rounded switch -->
+        <label class="switch">
+            <input type="checkbox">
+            <span class="slider round"></span>
+        </label>
         <div class="silhouette-light">
             <img src="/resources/Silhouette Light.png.png" alt="">
         </div>
         <div class="input-meassure">
-            <p>💪Hombros <input type="range" id="HombrosInput" value="0" min="0" max="200" oninput="this.nextElementSibling.value = this.value"> <output>0</output></p>
-            <p>📏Cintura <input type="range" id="CinturaInput" value="0" min="0" max="200" oninput="this.nextElementSibling.value = this.value"> <output>0</output></p>
-            <p>🤏Cadera <input type="range" id="CaderaInput" value="0" min="0" max="200" oninput="this.nextElementSibling.value = this.value"><output>0</output></p>
-            <p>🧍‍♀️Altura <input type="range" id="AlturaInput" value="0" min="0" max="300" oninput="this.nextElementSibling.value = this.value"><output>0</output></p>
+            <p>💪 Hombros <input type="range" id="HombrosInput" value="0" min="0" max="200" oninput="this.nextElementSibling.value = this.value"> <output>0</output></p>
+            <p>📏 Cintura <input type="range" id="CinturaInput" value="0" min="0" max="200" oninput="this.nextElementSibling.value = this.value"> <output>0</output></p>
+            <p>🤏 Cadera <input type="range" id="CaderaInput" value="0" min="0" max="200" oninput="this.nextElementSibling.value = this.value"><output>0</output></p>
+            <p>🧍‍♀️ Altura <input type="range" id="AlturaInput" value="0" min="0" max="300" oninput="this.nextElementSibling.value = this.value"><output>0</output></p>
             <button id="gButton">Generate</button>
             </p>
         </div>
