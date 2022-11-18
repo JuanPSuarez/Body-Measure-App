@@ -22,3 +22,7 @@ The final project will have a unique URL for name, measures and a mobile version
 ---
 
 ![Version 0.2](resources/Versions/version_0.2.png)
+
+### Version: 0.3
+---
+![Version 0.3](resources/Versions/version_0.3.png)
