@@ -25,6 +25,9 @@ p {
 .input-meassure {
     grid-column: 3;
     grid-row: 2;
+    /* TODO:  Let text and slider, align with each other*/
+    margin: 0px 70px 0px 0px;
+    text-align: right;
 }
 
 

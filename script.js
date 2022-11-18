@@ -9,17 +9,26 @@ class Medidas {
 
 document.addEventListener("DOMContentLoaded", function() {
 
-    const gButton = document.getElementById("gButton");
+
+
     const HombrosIn = document.getElementById("HombrosInput");
     const CinturaIn = document.getElementById("CinturaInput");
     const CaderaIn = document.getElementById("CaderaInput");
     const AlturaIn = document.getElementById("AlturaInput");
-    const switchButton = document.getElementById("Switch");
+    const gButton = document.getElementById("gButton");
+    const out1 = document.getElementById("1")
+    const out2 = document.getElementById("2");
+    const out3 = document.getElementById("3");
+    const out4 = document.getElementById("4");
+
+    // const switchButton = document.getElementById("Switch");
+
 
     //! TODO: Functional darkmode
 
-    switchButton.onclick = document.getElementsByTagName("body")[0];
-    element.classlist.toggle("dark-mode");
+    // switchButton.onclick = document.getElementsByTagName("body")[0];
+    // element.classlist.toggle("dark-mode");
+
     gButton.onclick = function changeContent() {
         const medidasPersona = new Medidas(
             HombrosIn.value,
@@ -28,18 +37,24 @@ document.addEventListener("DOMContentLoaded", function() {
             AlturaIn.value
         )
 
+
         //! TODO: Generar el texto debajo de los sliders
 
-        console.log(medidasPersona)
+
+        out1.textContent = "Hombros: " + medidasPersona.Hombro + "cm";
+        out2.textContent = "Cintura: " + medidasPersona.Cintura + "cm";
+        out3.textContent = "Cadera: " + medidasPersona.Cadera + "cm";
+        out4.textContent = "Altura: " + medidasPersona.Altura + "cm";
+
+        // console.log(outputM)
+
+        // console.log(medidasPersona)
 
 
         gButton.textContent = "Generated!";
         gButton.style = "Color: green";
 
-        // console.log(HombrosIn.value);
-        // console.log(CinturaIn.value);
-        // console.log(CaderaIn.value);
-        // console.log(AlturaIn.value);
+
         setTimeout(() => {
             gButton.textContent = "Generate";
             gButton.style = "Color: default";
