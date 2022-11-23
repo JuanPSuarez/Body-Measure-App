@@ -7,7 +7,21 @@ class Medidas {
     }
 }
 
+
+
+function myFunction() {
+    var element = document.getElementsByTagName("body")[0];
+    element.classList.toggle("dark-mode");
+
+    var button = document.getElementsByTagName("button")[0];
+    if (button.textContent == "🌚") button.textContent = "🌝";
+    else button.textContent = "🌚";
+}
+
+
 document.addEventListener("DOMContentLoaded", function() {
+    document.getElementsByTagName("button")[0].textContent = "dark-mode";
+
 
 
 
@@ -35,11 +49,9 @@ document.addEventListener("DOMContentLoaded", function() {
             CinturaIn.value,
             CaderaIn.value,
             AlturaIn.value
-        )
+        );
 
-
-        //! TODO: Generar el texto debajo de los sliders
-
+        //! TODO: Generar el texto debajo de los sliders ✅
 
         out1.textContent = "Hombros: " + medidasPersona.Hombro + "cm";
         out2.textContent = "Cintura: " + medidasPersona.Cintura + "cm";
@@ -50,10 +62,8 @@ document.addEventListener("DOMContentLoaded", function() {
 
         // console.log(medidasPersona)
 
-
         gButton.textContent = "Generated!";
         gButton.style = "Color: green";
-
 
         setTimeout(() => {
             gButton.textContent = "Generate";
