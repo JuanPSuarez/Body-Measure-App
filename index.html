@@ -7,7 +7,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Measures App</title>
     <link rel="stylesheet" href="style.css">
-    <script src="./script.js"></script>
+    <script defer src="./script.js"></script>
 
 
 </head>
@@ -17,7 +17,7 @@
     <div class="wrapper">
         <h1>Measures App</h1>
         <p>Take your measurements and enter them into the dials. Click the "Generate" button to create a unique URL.</p>
-        <button id="switch" onclick="myFunction()"></button>
+        <button id="switch" onclick="darkModeButton()">🌝</button>
 
         <!-- Rounded switch -->
         <!-- <label class="switch">
@@ -26,7 +26,7 @@
         </label> -->
 
         <div class="silhouette-light">
-            <img src="/resources/SilhouetteLight.png" alt="">
+            <img id="silhouette-img" src="/resources/SilhouetteLight.png" alt="An unisex human silhouette">
         </div>
         <div class="input-meassure">
             <p>💪 Shoulders <input type="range" id="HombrosInput" value="0" min="0" max="200" oninput="this.nextElementSibling.value = this.value"> <output>0</output></p>
