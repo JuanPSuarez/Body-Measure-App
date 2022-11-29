@@ -26,3 +26,14 @@ The final project will have a unique URL for name, measures and a mobile version
 ### Version: 0.3
 ---
 ![Version 0.3](resources/Versions/version_0.3.png)
+
+### Version: 0.4
+---
+![Version 0.4](resources/Versions/version_0.4.png)
+
+#### DarkMode
+![Version 0.4 Dark Mode](resources/Versions/version_0.4Dark.png)
+
+### Version: 0.5
+---
+
